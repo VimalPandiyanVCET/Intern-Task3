@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+      }
+      .container {
+        width: 90%;
+        max-width: 1400px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        text-align: center;
+        padding: 20px 0;
+        background: #566576;
+        color: white;
+        border-radius: 10px 10px 0 0;
+        font-size: 24px;
+      }
+      .navigation {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background: #eee;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .navigation a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+      }
+      .navigation a:hover {
+        background: #c8ccce;
+        color: white;
+      }
+      .content {
+        text-align: center;
+        padding: 20px;
+      }
+      .content h2 {
+        margin-bottom: 15px;
+      }
+      .content p {
+        margin-bottom: 25px;
+        font-size: 18px;
+      }
+      .featured-products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+      }
+      .product {
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .product:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .product img {
+        width: 100%;
+        max-height: 230px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
+      }
+      .product img:hover {
+        transform: scale(1.05);
+      }
+      .product h3 {
+        color: #333;
+        margin-bottom: 5px;
+      }
+      .product p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .add-to-cart {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 18px;
+        background: #28a745;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: transform 0.3s ease;
+      }
+      .add-to-cart:hover {
+        background: #218838;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Shop</h1>
+      </header>
+      <div class="navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="review.html">Review</a>
+      </div>
+      <div class="content">
+        <h2>Shop Our Collection</h2>
+        <p>Find the best products at the best prices!</p>
+        <div class="featured-products">
+          <div class="product">
+            <img src="v12.png" alt="Product 1" />
+            <h3>Shirts</h3>
+            <p>High-quality product reliable for daily use.</p>
+            <p><strong>Price: $45.99</strong></p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="v11.png" alt="Product 1" />
+            <h3>Striped shirts</h3>
+            <p>High-quality product with amazing features.</p>
+            <p><strong>Price: $29.99</strong></p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="v1.png" alt="Product 1" />
+            <h3>T Shirts</h3>
+            <p>Great value and excellent quality.</p>
+            <p><strong>Price: $39.99</strong></p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="v9.png" alt="Product 1" />
+            <h3>shirts</h3>
+            <p>High-quality product with amazing features.</p>
+            <p><strong>Price: $23.99</strong></p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="v8.png" alt="Product 2" />
+            <h3>Formal shirts</h3>
+            <p>Stylish and reliable for daily use.</p>
+            <p><strong>Price: $75.99</strong></p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="v7.png" alt="Product 3" />
+            <h3>Formal shirts</h3>
+            <p>Great value and excellent quality.</p>
+            <p><strong>Price: $56.99</strong></p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
